@@ -7,6 +7,11 @@ interface IFoodPlateProps {
 export const Container = styled.div<IFoodPlateProps>`
   background: #f0f0f5;
   border-radius: 8px;
+  transition: .5s ease;
+
+  &:hover {
+    transform: translate3d(0, -13px, 0);
+  }
 
   header {
     background: #ffb84d;
